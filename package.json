@@ -1,0 +1,24 @@
+{
+  "name": "pm2-notify",
+  "version": "1.0.0",
+  "description": "pm2-notify",
+  "main": "app.js",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "pm2": "2.4.2",
+    "pmx": "beta",
+    "request": "2.81.0"
+  },
+  "config": {
+    "url": ""
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "200M",
+      "script": "app.js"
+    }
+  ],
+  "author": "shyling<i@shyling.com>",
+  "license": "MIT"
+}
