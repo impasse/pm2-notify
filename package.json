@@ -4,13 +4,16 @@
   "description": "pm2-notify",
   "main": "app.js",
   "dependencies": {
-    "lodash": "4.17.4",
     "pm2": "2.4.2",
     "pmx": "beta",
-    "request": "2.81.0"
+    "request": "2.81.0",
+    "rxjs": "5.2.0"
   },
   "config": {
-    "url": ""
+    "url": "",
+    "interval": 2000,
+    "log": true,
+    "process": true
   },
   "apps": [
     {
