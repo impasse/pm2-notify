@@ -9,6 +9,7 @@ function buildMD(data) {
     return data.map(buildMD).join('------\n');
   } else {
     return '**Name**: ' + data.process.name + '\n'
+      + '**Host**: ' + os.hostname() + '\n'
       + '**Date**: _' + new Date(+data.at).toLocaleString() + '_\n'
       + (data.data.stack ? data.data.stack : data.data);
   }
