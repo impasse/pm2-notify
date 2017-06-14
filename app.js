@@ -11,7 +11,7 @@ function buildMD(data) {
     return '**Name**: ' + data.process.name + '\n'
       + '**Host**: ' + os.hostname() + '\n'
       + '**Date**: _' + new Date(+data.at).toLocaleString() + '_\n'
-      + (data.data.stack ? data.data.stack : data.data);
+      + JSON.stringify(data.data);
   }
 }
 
